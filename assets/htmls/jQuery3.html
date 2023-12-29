@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: white
+    }
+
+    body {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+
+    body>div {
+      flex: 1 1;
+      padding: 20px;
+    }
+    .cabecera {
+      color: white;
+      background-color: darkblue;
+      padding: 0 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .contenido {
+      border: solid 1px darkblue;
+      padding: 3px;
+    }
+  </style>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div data-cim="acordeon">
+  <div>
+    <h1>uno</h1>
+    <p>Contenido uno</p>
+  </div>
+  <div>
+    <h1>dos</h1>
+    <p>Contenido dos</p>
+  </div>
+  <div>
+    <h1>tres</h1>
+    <p>Contenido 3</p>
+  </div>
+</div>
+<div>
+  <h1>No tocar</h1>
+  <p>No debe pasarle nada</p>
+</div>
+
+<script src="updateDOM.js"></script>
+</body>
+</html>
